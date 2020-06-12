@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/UFPSradio.iml" filepath="$PROJECT_DIR$/UFPSradio.iml" group="UFPSradio" />
+      <module fileurl="file://$PROJECT_DIR$/UFPSradio-master.iml" filepath="$PROJECT_DIR$/UFPSradio-master.iml" group="UFPSradio-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/UFPSradio-master-app.iml" filepath="$PROJECT_DIR$/app/UFPSradio-master-app.iml" group="UFPSradio-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="UFPSradio/app" />
+    </modules>
+  </component>
+</project>
