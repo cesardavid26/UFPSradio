@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -68,16 +69,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        switch(menuItem.getItemId()){
-            case R.id.nav_podcast:
-               getSupportFragmentManager().beginTransaction().replace(R.id.listRecyclerPodcast,
-                       new PodcastFragment()).commit();
-            break;
+       int id = menuItem.getItemId();
+       if(id==R.id.nav_podcast){
+           Toast.makeText(this, "Podcast", Toast.LENGTH_SHORT).show();
 
-         //   case R.id.nav_podcast:
-               // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                  //      new PodcastFragment()).commit();
-        }
+       }
+       if(id==R.id.nav_programacion){
+           Toast.makeText(this, "Programacion", Toast.LENGTH_SHORT).show();
+
+       }
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
